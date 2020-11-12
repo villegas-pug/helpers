@@ -1,0 +1,15 @@
+» REDUCER(STATE MANANGEMENT) ░
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-> Manejador(Handler)	: Método recibe dependencias e inmuta un objetivo.
+-> Dependencia		: Constante o manejador.
+-> Reducer		: -> Maneja el estado del componente o aplicación. 
+			  -> Establece la lógica y retorna un objeto.
+			  -> Recibe un estado previo y una acción(dependencia) como argumento.
+			  
+-> Dispatcher		: Maneja al reducer. Recibe una acción(dependencia) como argumento.
+-> Actions		: -> Dependencia del dispatch y reducer.
+			  -> Método que retorna un objeto o una función asyncrona.
+			  -> Maneja el TYPE(establecido en tiempo de definición) y el PAYLOAD(establecido en tiempo de definición o invocación).
+			  
+-> Tipos de Action's	: Convencionales(retornan un objeto) y Asyncronas(retornan una función).
+

@@ -1,0 +1,6 @@
+» spring-boot-starter-web			: Para desarrollar servicios web.
+» Spring-Cloud-Starter-OpenFeign		: Para crear un cliente http de forma declarativa.
+
+► Eureka Server: Servidor para el registro de microservicios, balanceo de carga y toleracia de fallos.
+» Spring-Cloud-Starter-Netflix-Eureka-Server	: Servidor eureka.
+» Spring-Cloud-Starter-Netflix-Eureka-Client	: Cliente eureka.

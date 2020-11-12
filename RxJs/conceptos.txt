@@ -1,0 +1,8 @@
+§ STREAM: Flujo constante de datos. §
+
+*Tipos de programacion : Modular, Orientada a objetos, Concurrente y funcional.
+* Programación Reactiva	: 
+	-> Subcribirse a un flujo de datos. 
+	-> Reaccionar mediante eventos futuros.
+	-> Subcribirse a un posible evento futuro.
+	-> Paradigma de observables y stream de datos.

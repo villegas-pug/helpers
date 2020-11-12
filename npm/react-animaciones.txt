@@ -1,0 +1,2 @@
+* react-spinners	: https://www.davidhu.io/react-spinners/
+* react-reveal	: https://www.react-reveal.com/docs/

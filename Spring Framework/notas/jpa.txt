@@ -1,0 +1,24 @@
+» JPA: Java Persistence Api ░
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-> Relación Unidireccional	: Relación del lado hijo (@ManyToOne, @OneToOne).
+-> Relación Bidireccional	: Relación del lado hijo a padre y viceversa (@OneToMany).
+-> Persistence Context 		: Es un entorno transaccional, donde se gestionan las entidades.
+-> EntityMananger		: Objeto inmutable, para acceder al Persistence Context.
+-> @JoinColumn			: Anotación de campo, establece un campo como `fk` en la entidad.
+
+-> @OneToMany			: Entidad padre a entidad hija. Ambas entidades deberán estar anotadas con sus directivas respectivas, genera una 
+				  relación bidireccional.
+-> @ManyToOne			: Entidad hijo a entidad padre. El atributo anotado, genera una relación unidireccional.
+
+
+» CONSTRAINT'S
+--------------------------------------------------------------------------------------------------------------------------------------------------
+► UNIQUE:
+	-> 	@Entity
+	   	@Table(name="person", uniqueConstraints=@UniqueConstraint(columnNames={"sCode", "uId"}))
+		public class Person {
+			@Column(name = "sCode")
+    			public String code;
+			@Column(name = "uId")
+	    		public String id;
+		}

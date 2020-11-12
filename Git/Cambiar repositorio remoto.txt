@@ -1,0 +1,10 @@
+PASO 01
+-> $ git remote -v
+> origin  git@nombre de host:USERNAME/REPOSITORY.git (fetch)
+> origin  git@nombre de host:USERNAME/REPOSITORY.git (push)
+
+PASO 02
+-> $ git remote set-url origin <name-repository-url>
+-> $ git remote -v
+> origin  https://nombre de host/USERNAME/REPOSITORY.git (fetch)
+> origin  https://nombre de host/USERNAME/REPOSITORY.git (push)

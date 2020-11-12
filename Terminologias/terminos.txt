@@ -1,0 +1,18 @@
+/*» Lista de terminos ░*/
+-> Discontinua			:
+-> Aterrisar			:
+-> Saturar memoria		:
+-> Abstraer			:
+-> Indistinto			:
+-> Verbosidad			:
+-> Colapsar			:
+-> Expandir			:
+-> Shorthand			: Abreviatura.
+-> Breakpoint			: Media query's.
+-> Preset's			: Configuración(Option's).
+-> Convención			:
+-> Lenguaje Compilado		:
+-> Leguaaje Interpretado	:
+-> Arquitectura Monolitica	:
+-> Arquitectura Microservicios	:
+-> Balanceo de Carga		:

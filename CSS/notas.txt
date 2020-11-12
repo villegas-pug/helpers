@@ -1,0 +1,16 @@
+/* » SELECTORES ░ */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+* >	: Selecciona el primer nivel de hijos.
+* +	: Selecciona el primer hermano.	
+
+/* » POSICIONAMIENTO ░ */
+* Coordenadas		: Top, Rigth, Bottom, Left.
+* Position Relative	: Mantiene su posición incial, coordenadas disponibles, no pierde su espacio en el flujo del dom.
+* Position Absolute	: Mantiene su posición incial, coordenadas disponibles respecto al ancestro posicionado, pierde su espacio en el flujo, 
+			  el ancho es definido por su contenido.
+* Position Fixed	: Mantiene su posición incial, coordenadas disponibles respecto al viewport, pierde su espacio en el flujo, el ancho es 
+			  definido por su contenido.
+
+/* » UNIDADES DE MEDIDA ░ */
+* EM	: Relativo a la fuente del padre directo.
+* REM	: Relativo a la fuente del root(body).

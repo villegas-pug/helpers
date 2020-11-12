@@ -1,0 +1,6 @@
+» UseEffect:
+	-> El contexto de este hook es leido, cuando la dependencia cambian de valor.
+	-> IMPORTANTE: Si no cambia la dependencia el contexto no es leico.
+
+» UseState:
+	-> Cuando el componente es re-renderizado, la dependencia(estado o propiedad) recuerda el ultimo valor.

@@ -1,0 +1,83 @@
+» CONCEPTOS:
+----------------------------------------------------------------------------------------------------------------------------
+-> TIPOS DE ANOTACIONES		: Clases anotadas, métodos anotados, campos anotados y parámetros anotados. Son modificadores de acceso.
+-> COMPONENTE	     		: Son clases anotadas con @Component o sus derivados estas pasan a ser registradas en el 
+		                  Spring Container, para luego ser inyectadas.  
+-> DERIVADOS           		: Son todos aquellos elementos que heredan conceptos del elemento modelo(Elemento raiz).
+-> SPRING CONTAINER    		: Entorno donde se crea los objetos, los relaciona entre si y escucha el ciclo de vida.
+-> PERSISTENCE CONTEXT 		: Es un entorno transaccional, donde se gestionan las entidades.
+-> TIPOS DE INTERSEPTORES	: Clase Y Método(Este usa el patrón de anotaciones).
+-> PATRÓN SINGLETON		: Una sola instancia en todo el ciclo de vida de la aplicación.
+-> DIRECTIVA			: Reglas de validación.
+-> SUMINISTRAR			:
+-> RECUPERAR			:
+-> @Bean				: Anotacion de método. Registra en el spring container.
+
+» REST 
+----------------------------------------------------------------------------------------------------------------------------
+-> @RequestBody		: 
+-> @ResponseBody		: 
+-> HttpServletRequest	: Objeto mutable de petición, maneja lado del servidor.
+-> HttpServletResponse	: Objeto mutable de respuesta, maneja lado del cliente.
+
+» INTERCEPTORES: Intercepta manejadores del controlador. Requiere registrarse en la configuración de Spring.  
+---------------------------------------------------------------------------------------------------------------------------
+-> @Configuracion	: Modificador de clase. Establece que una clase es parte de la configuración de spring.
+-> PreHandle		: Antes de llamar al método.
+-> PostHandle		: Despues de haber llamado al método.
+-> AfterComplition	:
+
+» FILTER: Interface, Intercepta manejadores del controlador. Requiere registrarse en el Spring Container  
+---------------------------------------------------------------------------------------------------------------------------
+-> Ciclo de vida:
+	-> Init()	: Desencadenado solo una vez, al iniciar el filtro. 
+	-> doFilter()	: Maneja las acciones del filtro y el flujo de la solicitud con el metodo FilterChain().
+	-> destroy()	: Desencadenado solo una vez, al finalizar en ciclo del filtro.
+
+» VALIDACIONES
+---------------------------------------------------------------------------------------------------------------------------
+-> @InitBinder			: Anotación de método, intersecta las peticiones. Recupera el body request en el parametro 
+			  	  WebDataBinder del mapeo implicito entre el body request y el objeto.
+-> @Valid			: Anotación de parametro en el manejador.
+-> BindingResult			: Objeto para recuperar excepciones del mapeo implicito entre el body request y el objeto.
+-> Validator			: Evalua lo recuperado en el objeto WebDataBinder del mapeo implicito, retorna un booleano.
+-> Customs Annotation's		: Directiva que requiere ser vinculada a un constraint(Directiva de clase).
+-> Editor			: Modifica lo recuperado en el WebDataBinder del mapeo implicito, requiere una directiva de clase.
+
+§ SPRING SECURITY : Autentificación y Autorización. §
+/*-------------------------------------------------------------------------------------------------------------------------*/
+-> Filter's(Base)			: WebSecurityConfigurerAdapter, UsernamePasswordAuthenticationFilter
+-> Filter				: JWTAuthenticationFilter, JWTAuthorizationFilter.
+-> Configuración de Spring		: Manejar la autentificación(Apoyado en un servicio) y las restricciones de seguridad Http.
+-> Objetos inmutables			: Authentication, Principal.
+-> BCryptPasswordEncoder			: Objeto de Encriptación.
+* AutenticationManager			: Se apoya en el servicio userDetailsService, para validar las credenciales y el token de autenticación.
+* UsernamePasswordAuthenticationToken	: Objeto mutable, usado para representar las credenciales de usuario.
+* Claims				: Objeto mutable, recupera las credenciales del usuario del token, cuerpo del JWT.
+* SimpleGrantedAuthority		: Objeto mutable implementa de GrantedAuthority, representa los roles del usuario.
+* SecurityContext			: Objeto inmutable, persiste las credenciales de usuario.
+* SecurityContextHolder			: Objeto helper, para manipular al SecurityContext.
+
+» SESIONES 
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* @SesionAtributes	: Anotación de clase, suministra a la sesión los atributos del modelo.
+* @ModelAtribute	: Anatocacion de método define un atributo del modelo. 
+* @SesionAtribute	: Anatocacion de parámetro, recupera un atributo de la sesion, definida en el modelo.
+
+» MICROSERVICIOS:
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Contenedores de Microservicios	: Servidor Eureka.
+* RestTemplate				: Objeto inmutable, Rest Client. Peticiones Http del lado del Api.
+* @FeignRest				: Crear Rest Client.
+
+»  MANEJO EXCEPCION API POR CONTROLADOR
+----------------------------------------------------------------------------------------------------------------------------
+-> @RestControllerAdvice	: Spring maneja las excepciones mediante un controlador de excepciones global.
+
+» JPA
+---------------------------------------------------------------------------------------------------------------------------
+* Caracteristicas tabla de `Hechos` y `Dimencionales`
+	Hechos      -> Dependiente, incremento recurrente. 
+	Dimencional -> Dependencia, incremento periodico.
+
+	

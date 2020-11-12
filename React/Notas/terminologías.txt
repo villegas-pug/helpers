@@ -1,0 +1,32 @@
+» MALAS PRACTICAS ░
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-> Colección de nombres, para las dependencias.
+-> Recuperar mas de 1 dependencia reactiva(estado), dentro de un manejador(En la mayoria de ocaciones no recuperas el valor actual de la dependencia).
+-> Suministrar(Actualizar) a más de 1 estado desde un manejador(Si el 2do... requiere el estado del 1ero, no se obtendrá el resultado esperado).
+
+::. IMPORTANTE ::.
+/*------------------------------------------------------------------------------------------------*/
+-> El componente es renderizado en su estado elemento.
+-> (!)Operador negación: Evalua el contenido  de una variable, y convierte en booleano una variable
+
+::. TERMINOLOGIAS ::.
+/*------------------------------------------------------------------------------------------------*/
+-> Metodos Handler(Sinónimos): Menjadores, Callback dependencia.
+-> Tipos de Componentes: Container y Child.
+-> Componetes basados en clases y en funciones.
+-> Tipos de dependencias: State y Callback.
+-> Theme: Directivas de estilos.
+
+/* § CICLO DE VIDA : FUNCTIONAL COMPONENT § */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+* Renderizado		: Es el proceso de transformar tus componentes de React en nodos DOM.
+* ComponentDidMount	: Cuando el component es dibujado en el DOM por primera vez.
+* ComponentDidUpdate	: Cuando las dependencia(estado o propiedades) del componente fueron actualizadas.
+* ComponentWillUnmount	: Cuando el component ya no se visualiza en el DOM.
+
+/* § HOC(Higth Order Component): Recibe un componente le inyecta nuevas props y retorna este nuevo componente. § */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+-> HOC como componente	: Recibe el componente como argumento.
+-> HOC como elemento	: Recibe el componente en las props.	
+
+

@@ -1,0 +1,14 @@
+/* § serve -[OPTIONS] /[Directory] § */
+/*----------------------------------------------------------------*/
+* -v	: Muestra la versión actual de la publicación.
+* -l 	: Especifica un extremo URI en el que escuchar (ver más abajo) - se puede especificar más de uno para escuchar en varios lugares
+* -d	: Debug Muestra información de depuración
+* -s	: Single Reescribe todas las solicitudes no encontradas en `index.html`
+* -c	: Especifica la ruta personalizada a `serve.json`
+      -C, --cors Habilita CORS, establece `Access-Control-Allow-Origin` en` * `
+      -n, --no-clipboard No copia la dirección local al portapapeles
+      -u, --no-compress No comprime archivos
+      --no-etag Envía el encabezado `Última modificación` en lugar de` ETag`
+      -S, --symlinks Resuelve enlaces simbólicos en lugar de mostrar errores 404
+      --ssl-cert Ruta opcional a un certificado SSL / TLS para servir con HTTPS
+      --ssl-key Ruta opcional a la clave privada del certificado SSL / TLS

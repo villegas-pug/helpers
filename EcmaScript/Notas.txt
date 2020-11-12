@@ -1,0 +1,52 @@
+/* § CONCEPTOS § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Dependencia		: Tipo primitivo, colección, método, elementos.
+* Object Literal	: {...props}
+* Object Config(preset)	: {...props}
+* Object Constructor	: {contructor(...props)}
+
+
+/* § SUMINISTRO|RECUPERACIÓN: Null and Undefined  § */
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+* Si dependencia es definida, pero no inicializada			: const arr; 			-> Undefined
+* Si dependencia es definida e inicializada				: const arr = '' || null; 	-> Null
+* Si dependencia no esta definida. Se debe aplicar coerción de tipo	: `No definida...`   		-> typeof(arr) === 'Undefined' = true
+
+/* § DESTRUCTURING(Delimitadores -> {}, [])	: Retorna elementos hijos directos. § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Destructuración anidada	: 
+* OPERADOR(SPREAD)		: Expande el wrapper y retorna elementos hijos directos.
+* OPERADOR(REST)		: Envuelve un conjunto de elementos y retorna un wrapper.
+* Object, Array			: Wrappers, colleciones.
+
+/* § PROGRAMACIÓN FUNCIONAL § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* ForEach	: Itera elementos de un arreglo y no retorna un array.
+* Map		: Inmuta elementos de un arreglo y retorna otro. El nuevo array contiene solo elemento inmutados.
+* Filter	: Filtra elementos de un arreglo y retorna un nuevo array.
+* Find		: Busca elementos de un arreglo y retorna un nuevo array.
+* Reduce	: Itera elementos de un arreglo. Por cada devolución, actualiza el Contador(Estado local).
+
+/* § ITERADORES § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* for...in	: Itera una cadena o colección(all) y retorna el key.
+* for...of	: Itera una cadena o colección(only value) y retorna el value.
+
+/* § TIPO COERCIÓN: Toma una dependencia y convierte a booleano. § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Operador &&	: Evalua `n-hilos` de dependencias y si la coerción resulta false, retorna ese ultimo valor.
+* Operador ||	: Evalua `n-hilos` de dependencias y si la coerción resulta true, retorna ese ultimo valor.
+
+/* § OBJECT METHOD'S § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Includes	:
+* Some		:
+
+/* § ARRAY METHOD'S § */
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Includes	:
+* Some		: Returna true si almenos 1 elemento, cumple una condición.
+* Every		: Returna true si almenos toso los elemento, cumple una condición.
+
+
+

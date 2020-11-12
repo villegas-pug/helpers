@@ -1,0 +1,43 @@
+└└ PRESENTACIÓN ┘┘
+                /*
+                    -> Crear, carga y estilizar ComboBox header del dgvRequisitos_E5, desde el modelo de datos...
+                */
+                /*--------------------------------------------------------------------------------------------------------------*/
+                /*-> Creación y carga...*/
+                DataGridViewComboBoxColumn dgvColFormato = new DataGridViewComboBoxColumn();
+                dgvColFormato.DataSource = Globales.ServicioRemoto.getTipoFormato(null);
+                dgvColFormato.DisplayMember = "sDescripcion";
+                dgvColFormato.ValueMember = "nIdFormato";
+                dgvColFormato.HeaderText = "FORMATO";
+
+                /*-> Estilos...*/
+                DataGridViewCellStyle dgvCellStyle = new DataGridViewCellStyle();
+                dgvCellStyle.ForeColor = SystemColors.Highlight;
+                dgvColFormato.FlatStyle = FlatStyle.Flat;
+                dgvColFormato.DefaultCellStyle = dgvCellStyle;
+                dgvColFormato.Width = 70;
+                
+                /*-> Append al `gridRequisitos`...*/
+                dgvRequisitos_E5.Columns.Add(dgvColFormato);
+                /*--------------------------------------------------------------------------------------------------------------*/
+
+                /*
+                        -> Crear, carga y estilizar CheckBox header del dgvRequisitos_E5, desde el modelo de datos...
+                    */
+                /*--------------------------------------------------------------------------------------------------------------*/
+                /*-> Creación y carga...*/
+                DataGridViewCheckBoxColumn dgvColEntrega = new DataGridViewCheckBoxColumn();
+                dgvColEntrega.HeaderText = "¿ENTREGÓ?";
+                dgvColEntrega.Name = "ENTREGA";
+                
+
+                /*-> Estilos...*/
+                dgvColEntrega.FlatStyle = FlatStyle.Flat;
+                dgvColEntrega.Width = 60;
+
+                /*-> Append al `gridRequisitos`...*/
+                dgvRequisitos_E5.Columns.Add(dgvColEntrega);
+                /*--------------------------------------------------------------------------------------------------------------*/
+
+└└ DATOS ┘┘
+└└ NEGOCIO ┘┘

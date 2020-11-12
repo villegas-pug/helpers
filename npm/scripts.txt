@@ -1,0 +1,11 @@
+/* § MODULOS NODE § */
+/*----------------------------------------------------------------*/
+* bcryptjs		: Encriptar contraseñas.
+* dotenv		: Leer constantes del archivo(env).
+* JWT(Json Web Token)	: Genera y autentifica una token web a partir de una identidad(payload) y un keyword. 
+			  Hace el papel de una super global sesión. Para verificar el token ir (jwt.io).
+
+
+/* § EXPRESS § */
+/*----------------------------------------------------------------*/
+* express-validator	: Intersecta la petición y valida el request body.

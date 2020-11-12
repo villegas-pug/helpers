@@ -1,0 +1,16 @@
+/*§ CONCEPTOS  §*/
+/*-------------------------------------------------------------------------------------------------*/
+* Ternario(Shortcut)		: a || b ó a && b
+* COMANDOS GLOBALES		: Son todos aquellos comando que inicializan una acción.
+* PROGRAMACIÓN FUNCIONAL	: Sintaxis lineal 
+* PROGRAMACIÓN DECLARATIVA	: Sintaxis lineal 
+
+/*§ NODE §*/
+/*-------------------------------------------------------------------------------------------------*/
+* EXPRESS			: Módulo mutable, para la configuración del servidor.
+* PROCESS			: Objeto global inmutable de configuración de node.
+* MONGOOSE			: Módulo mutable para definir una conección a mongodb y el modelo colección.
+* BABEL-NODE			: Módulo inmutable para traspilar el js.
+* NODEMON			: Comando global, escucha los cambios y reinicia el servidor de node.
+* HTTP HEADER			: Directivas mutables.
+* HTTP BODY			: Query String.

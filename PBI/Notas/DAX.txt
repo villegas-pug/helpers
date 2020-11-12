@@ -1,0 +1,10 @@
+§ REGLAS §
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* Filter Context			: Es el contexto afectado por el filtro.
+* Filter Row				: Es el contexto afectado por la cebecera de una fila en una tabla o matriz.
+* Filter Column				: Es el contexto afectado por la cebecera de una columna en una tabla o matriz.
+* Campos sencibles al `Filter Context`	: Son todos aquellos campos, no envueltos en funciones.
+
+§ FUNCIONES DE INTELIGENCIA DE TIEMPO §
+/*-------------------------------------------------------------------------------------------------------------------------*/
+* DATESMTD	: Retorna tabla temporal del mes hasta la fecha actual. Sencible al filter context.

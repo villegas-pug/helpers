@@ -1,0 +1,5 @@
+» Context-Api: HOC, maneja el estado de la aplicación... ░
+----------------------------------------------------------------------
+-> CreateContext		: 
+-> <Alias-Context>.Provider	:
+-> 

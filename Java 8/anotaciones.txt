@@ -1,0 +1,32 @@
+§ CONCEPTOS §
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+* Colección		: Almacén dinámico de objetos. Set, List, Queue o Map
+* Métodos referenciados	: 
+* Tipado		: Primitivo y Objeto.
+
+§ lambda's : Funciones anónimas se apoyan en una interface funcional.  §
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+* Interface Funcional	: Define un método abstracto y por lo menos un método por defecto implementado.
+
+§ Genéricos : Clases y métodos de tipado dinámico. El wildcar se denota dentro del operador diamante. Utilizado en tiempo de inicialización o definición.  §
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+* Wildcard		: <? extends Object>; Que herede o implemente de Object.
+* Wildcard		: <? super Object>; Que herede o implemente de Object.
+* <?>			: Operador empleado en tiempo de tipificación. 
+* <T>			: Operador empleado en tiempo de definición. 
+* Optional<?>		:
+
+§ Stream: Toda colección no clave valor, hereda este método y retorna una nueva colección, que soporta operaciones de agregación secuencial. §
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+* Programación funcional		: Orientado al patrón ETL.
+* Programación funcional reactiva	: Permite filtrar(filter), transfomar(map) y resumir(reducer).
+* Se apoyan en las expresiones lambda.
+	~ Ciclo de vida.	 
+		-> Origen de datos		: Es una colección de datos.
+		-> Operaciones intermedias	: Operación de transformación. Genera flujo de datos. 
+		-> Operaciones terminales	: Operación de carga. No genera flujo de datos.
+
+§ Excepciones: §
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+* No Controladas	: Cualquier clase que extienda de Exception. Es controlada implicitamente, envuelta en TRY|CATCH ó en la cabecera del método.
+* Controladas		: Cualquier clase que extienda de RuntimeException. Es controlada explicitamente.

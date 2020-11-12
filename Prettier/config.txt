@@ -1,0 +1,7 @@
+» Instalación: ░
+-> Instalar extensión en Visual Studio Code.
+-> npm i --save-dev prettier
+
+» Configuración: ░
+-> .prettieringnore	: Archivo de configuración, para omitir en tiempo de scan.
+-> .prettierrc.json	: Archivo de configuración.

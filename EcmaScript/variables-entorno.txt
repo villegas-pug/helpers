@@ -1,0 +1,8 @@
+» DOTENV | CROSSENV ░
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-> npm i --save cross-env	: Paquete establece y recuperar variables del sistema. Las variables unicamente viven en la terminal actual.
+-> npm i --save dotenv		: Paquete recupera variables del sistema, desde un archivo con estensión (env). Este tipo de archivo se recomienda 
+				  registrar en gitignore. 
+				-> (1)importar		: import dotenv from 'dotenv'
+				-> (2)inicializar	: dotenv.config()
+				-> (3)recuperar		: process.env.VARIABLE

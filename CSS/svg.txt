@@ -1,0 +1,8 @@
+» Propiedades ░
+----------------------------------------------------------------------------
+-> stroke	: Color de borde.
+
+
+» Selectores ░
+----------------------------------------------------------------------------
+-> element > :global(svg)	: Selecciona solo hijos directos de tipo svg.

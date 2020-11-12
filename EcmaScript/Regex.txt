@@ -1,0 +1,30 @@
+/* $ GLOBALES $ */
+/*-------------------------------------------------------------------------------------------------*/
+* ^	: Inicio o negación de una expresión.
+* $	: Cierre de una expresión.
+* \	: Escapar del contexto de una expresión.
+* /g	: 
+* /i	: 
+* |	: Elegir entre dos valores.
+
+/* $ Agrupaciones $ */
+/*-------------------------------------------------------------------------------------------------*/
+* ()	: Caracter especial de agrupación.
+* []	: Caracter especial de Rangos.
+* {}	: Caracter especial de Cuantificador.
+
+/* OPERADORES: Son caracteres especiales, que preceden y modifican una expresión */
+/*-------------------------------------------------------------------------------------------------*/
+-> *	: Longituda variable de 0 a más.
+-> +	: Longitud variable de 1 a mas.
+-> .	: Caracter variable.
+-> ?	: Caracter opcional.
+
+/* CARACTERES DE ESCAPE */
+/*-------------------------------------------------------------------------------------------------*/
+* \d	: Digito.
+* \D    : No digito
+* \w	: Alfanumérico.
+* \W	: No alfanumérico.
+
+

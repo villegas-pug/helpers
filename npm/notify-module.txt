@@ -1,0 +1,3 @@
+-> sweet-alert2		: https://sweetalert2.github.io/
+-> noty			: https://ned.im/noty/
+-> react-toastify	: https://fkhadra.github.io/react-toastify/

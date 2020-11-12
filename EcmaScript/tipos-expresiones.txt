@@ -1,0 +1,15 @@
+» TIPOS DE EXPRESIONES ░
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-> Expresiones aritméticas	: son aquellas que utilizan operadores aritméticos y como operandos tienen datos numéricos.
+-> Expresiones relacionales	: Son las expresiones en las que aparecen los operadores relacionales. El resultado de expresiones relacionales 
+				  siempre será uno de dos valores posibles, o verdadero o falso.
+-> Expresiones lógicas		: Son aquellas que usan exclusivamente operadores lógicos. El resultado de una expresión lógica siempre es verdadero o falso. 
+				  El operador Y hará que la expresión sea verdadera sólo y exclusivamente cuando los dos operandos sean verdaderos. 
+				  Una expresión con el operador O será verdadera cuando alguno de los dos operandos, o los dos, sean verdaderos. 
+				  El operador NO negará la expresión, es decir, que el resultado final será verdadero cuando el operando sea falso, o viceversa.
+-> Expresiones alfanuméricas	: En las expresiones de carácter no existen operadores y en las expresiones de cadena sólo existe uno, el +, concatenación, 
+				  que lo que hace es unir cadenas.
+-> Expresiones de asignación	: Estas expresiones ya las conoces, se utilizan para asignarle valores a las variables o constantes. Tienen dos operandos: 
+				  el operando de la izquierda del operador será siempre un identificador que corresponderá a una variable o a una constante, 
+				  mientras que el operando de la derecha del operador puede ser un valor fijo, una variable, una constante o una expresión. 
+				  Ambos operandos tienen que ser del mismo tipo de datos.
